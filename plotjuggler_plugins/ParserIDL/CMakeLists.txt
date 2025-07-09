@@ -2,7 +2,7 @@ if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/dds_parser")
   set(DDS_PARSER_BUILD_TESTING
       OFF
       CACHE BOOL "Force DDS_PARSER_BUILD_TESTING to OFF" FORCE)
-  add_subdirectory(dds_parser)
+  #add_subdirectory(dds_parser)
 
   add_library(ParserDDS SHARED idl_parser.cpp)
 

@@ -201,12 +201,21 @@ target_link_libraries(plotjuggler_qwt
     Qt5::Widgets
     Qt5::Concurrent
     Qt5::Svg
+    Qt5::PrintSupport
     )
 
 target_compile_definitions(plotjuggler_qwt PUBLIC QWT_MOC_INCLUDE)
 #target_compile_definitions(plotjuggler_qwt PUBLIC QWT_DLL QWT_MAKEDLL )
 
 add_library(plotjuggler_qwt_objects OBJECT ${QWT_SRC})
+target_link_libraries(plotjuggler_qwt_objects
+    Qt5::Core
+    Qt5::Gui
+    Qt5::Widgets
+    Qt5::Concurrent
+    Qt5::Svg
+    Qt5::PrintSupport
+    )
 target_compile_definitions(plotjuggler_qwt_objects PUBLIC QWT_MOC_INCLUDE)
 
 install(

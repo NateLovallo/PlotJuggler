@@ -31,6 +31,7 @@
 
 /build*
 /*.user
+.venv*
 
 site/images/
 /PlotJugglerInstaller

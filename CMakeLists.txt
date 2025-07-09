@@ -216,7 +216,7 @@ target_include_directories(
 
 target_link_libraries(
   plotjuggler_base
-  PUBLIC plotjuggler_qwt
+  PUBLIC plotjuggler_qwt Qt5::Xml Qt5::WebSockets
   PRIVATE lua::lua)
 
 # Add compile definitions to plotjuggler_base

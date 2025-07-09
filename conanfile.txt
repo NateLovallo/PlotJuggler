@@ -1,12 +1,20 @@
- [requires]
- protobuf/3.21.12
- mosquitto/2.0.18
- zeromq/4.3.5
- arrow/20.0.0
+[requires]
+protobuf/3.21.12
+mosquitto/2.0.18
+zeromq/4.3.5
+arrow/20.0.0
+qt/5.15.8
 
- [options]
- zeromq*:shared=False
+[options]
+zeromq*:shared=False
+qt/*:shared=True
+qt/*:qttools=True
+qt/*:widgets=True
+qt/*:xml=True
+qt/*:printsupport=True
+qt/*:qtsvg=True
+qt/*:qtwebsockets=True
 
- [generators]
- CMakeDeps
- CMakeToolchain
+[generators]
+CMakeDeps
+CMakeToolchain
