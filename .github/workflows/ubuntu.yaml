@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - qt_from_conan
   pull_request:
     types: [opened, synchronize]
 
